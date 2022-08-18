@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <link rel="stylesheet" href="css/indexstyle.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="home-intro">
+        <h1>Learn to Code for free!</h1>
+        <br>
+        <h1>Build Projects.</h1>
+        <br>
+        <h1>Earn certifications.</h1>
+        <br>
+        <p>Since 2019, more than 40,000 freeCodeCamp.org graduates have gotten</p>
+        <p>jobs at tech companies including:</p>
+        <pre><i class="fab fa-apple"></i> Apple  <i class="fab fa-google"></i> Google   <i class="fab fa-microsoft"></i> Microsoft   <i class="fab fa-spotify"></i> Spotify   <i class="fab fa-amazon"></i> Amazon</pre>
+        <a href="/signup" class="btn btn-secondary" tabindex="-1" role="button" aria-disabled="true">Get Started!</a>
+        {{#each courses as |c|}}
+            <p class="box-item">{{c.title}} - {{c.duration}} days</p>
+        {{/each}}
+
+    </div>
+</body>
+</html>

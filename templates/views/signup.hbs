@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    {{>navbar}}
+    <div class="sign-up-form">
+        <form action="/signup" method="post">
+            <h2><i class="fas fa-user"></i> Sign Up Now</h2>
+            <input class="input-box" type="text" name="username" placeholder="Username">
+            <input class="input-box" type="email" name="email" placeholder="Email ID">
+            <input class="input-box" type="password" name="password" placeholder="Password">
+            <input class="input-box" type="password" name="confirmpassword" placeholder="Confirm Password">
+            <button class="signup-btn btn-sign" type="submit" value="signup">Sign Up</button>
+            <hr>
+            <p class="or">OR</p>
+            <button class="google-btn btn-sign" type="submit">Log In with Google</button>
+        </form>
+    </div>
+</body>
+</html>

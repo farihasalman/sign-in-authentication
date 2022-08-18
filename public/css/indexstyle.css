@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(245, 237, 237);
+    font-family: sans-serif;
+}
+.home-intro{
+    width: 700px;
+    padding: 20px;
+    padding-left: 150px;
+    margin: 8% auto 0;
+}
+
+.box-item{
+    border: black solid 1px;
+    background-color: rgb(77, 75, 75);
+    color: white;
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+}
